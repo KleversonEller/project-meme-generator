@@ -15,8 +15,9 @@ window.onload = function () {
   let imagemSelecionada = document.querySelector('#meme-insert');
 
   imagemSelecionada.addEventListener('change', function (evento) {
-    let localImagem = document.querySelector('#meme-image');
+    let localImagem = document.querySelector('#meme-image-container');
     let cria = document.createElement('img');
+    cria.id = 'meme-image';
     let imagem = evento.target;
     let reader = new FileReader();
 

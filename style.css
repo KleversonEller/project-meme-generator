@@ -1,1 +1,32 @@
-/* * criar o stylo para o requisito 2  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
+#input {
+  display: inline-block;
+  width: 450px;
+  text-align: start;
+}
+
+#meme-image-container {
+  margin: auto;
+  height: 500px;
+  width: 90%;
+  background-color: white;
+  border: solid 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+#meme-image {
+  height: -webkit-fill-available;
+  width: -webkit-fill-available;
+}
+
+#meme-text {
+  position: absolute;
+}
