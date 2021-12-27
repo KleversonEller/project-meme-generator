@@ -33,3 +33,28 @@ body {
   color: white;
   position: absolute;
 }
+
+button {
+  margin: 10px;
+}
+
+#fire {
+  background-color: red;
+  border: 3px dashed;
+  width: 60px;
+  height: 40px;
+}
+
+#water {
+  background-color: blue;
+  border: 5px double;
+  width: 60px;
+  height: 40px;
+}
+
+#earth {
+  background-color: green;
+  border: 6px groove;
+  width: 60px;
+  height: 40px;
+}

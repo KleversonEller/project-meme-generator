@@ -30,4 +30,25 @@ window.onload = function () {
   });
 
   //! Pega o aquivo selecionado pelo ususario e exibe na tela
+
+  //? Requisito 6
+
+  let imagem = document.querySelector('#meme-image-container');
+  let fire = document.querySelector('#fire');
+
+  fire.addEventListener('click', function () {
+    imagem.style.border = '3px dashed red';
+  });
+
+  let water = document.querySelector('#water');
+
+  water.addEventListener('click', function () {
+    imagem.style.border = '5px double blue';
+  });
+
+  let earth = document.querySelector('#earth');
+
+  earth.addEventListener('click', function () {
+    imagem.style.border = '6px groove green';
+  });
 };
