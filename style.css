@@ -18,11 +18,10 @@ body {
   width: 90%;
   background-color: white;
   border: solid 1px;
-  object-fit: cover;
   position: relative;
 }
 
-#meme-image {
+img {
   height: -webkit-fill-available;
   width: -webkit-fill-available;
 }
@@ -57,4 +56,11 @@ button {
   border: 6px groove;
   width: 60px;
   height: 40px;
+}
+
+#memes div {
+  display: inline-block;
+  margin: 20px;
+  width: 200px;
+  height: 250px;
 }

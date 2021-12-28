@@ -15,9 +15,7 @@ window.onload = function () {
   let imagemSelecionada = document.querySelector('#meme-insert');
 
   imagemSelecionada.addEventListener('change', function (evento) {
-    let localImagem = document.querySelector('#meme-image-container');
-    let cria = document.createElement('img');
-    cria.id = 'meme-image';
+    let cria = document.querySelector('#meme-image');
     let imagem = evento.target;
     let reader = new FileReader();
 
@@ -26,7 +24,6 @@ window.onload = function () {
       cria.src = referencia;
     };
     reader.readAsDataURL(imagem.files[0]);
-    localImagem.appendChild(cria);
   });
 
   //! Pega o aquivo selecionado pelo ususario e exibe na tela
@@ -50,5 +47,37 @@ window.onload = function () {
 
   earth.addEventListener('click', function () {
     imagem.style.border = '6px groove green';
+  });
+
+  //! Implementa a função de estilo de borda na imagem
+
+  //? Requisito 7
+
+  let meme1 = document.querySelector('#meme-1');
+
+  meme1.addEventListener('click', function () {
+    let imagem = document.querySelector('#meme-image');
+    imagem.src = './imgs/meme1.png';
+  });
+
+  let meme2 = document.querySelector('#meme-2');
+
+  meme2.addEventListener('click', function () {
+    let imagem = document.querySelector('#meme-image');
+    imagem.src = './imgs/meme2.png';
+  });
+
+  let meme3 = document.querySelector('#meme-3');
+
+  meme3.addEventListener('click', function () {
+    let imagem = document.querySelector('#meme-image');
+    imagem.src = './imgs/meme3.png';
+  });
+
+  let meme4 = document.querySelector('#meme-4');
+
+  meme4.addEventListener('click', function () {
+    let imagem = document.querySelector('#meme-image');
+    imagem.src = './imgs/meme4.png';
   });
 };
